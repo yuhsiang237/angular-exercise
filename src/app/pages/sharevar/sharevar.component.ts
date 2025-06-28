@@ -9,7 +9,7 @@ import { KeyService } from '../../services/key.service';
 export class SharevarComponent implements OnInit {
   key: string = '';
 
-  constructor(private keyService: KeyService) { }
+  constructor(private keyService: KeyService) {}
 
   ngOnInit(): void {
     // 初始化顯示 key 的值
@@ -23,5 +23,4 @@ export class SharevarComponent implements OnInit {
   get currentKey(): string {
     return this.keyService.getKey();
   }
-
 }
