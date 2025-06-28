@@ -8,12 +8,14 @@ import { ParentComponent } from './pages/parent/parent.component';
 import { Child1Component } from './pages/parent/child1/child1.component';
 import { Child2Component } from './pages/parent/child2/child2.component';
 import { BasicComponent } from './pages/basic/basic.component';
+import { SharevarComponent } from './pages/sharevar/sharevar.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'basic', component: BasicComponent },
   { path: 'lifecycle', component: LifecycleComponent },
+  { path: 'sharevar', component: SharevarComponent },
   {
     path: 'parent',
     component: ParentComponent,
