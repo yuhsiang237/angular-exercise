@@ -1,6 +1,6 @@
 <p>basic works!</p>
-<h1>1.Interpolation（插值綁定)</h1>  
-<p>{{title}}</p>
+<h1>1.Interpolation（插值綁定)</h1>
+<p>{{ title }}</p>
 <h1>2.Property Binding[]</h1>
 <button [disabled]="isDisabled">Click me</button>
 <h1>3. Event Binding ( )</h1>
@@ -17,24 +17,21 @@ ngModel 是屬於 Template-driven Form 的功能，Angular 不會自動幫你加
 <h1>5. 條件渲染 *ngIf</h1>
 <button (click)="isVisible = !isVisible">Toggle</button>
 <p *ngIf="isVisible">Now you see me!</p>
-<h1>6. 列表渲染 *ngFor
-  </h1>
+<h1>6. 列表渲染 *ngFor</h1>
 <ul>
   <li *ngFor="let item of items">{{ item }}</li>
 </ul>
 <div *ngFor="let cinema of cinemas">
   <b>{{ cinema.name }} - {{ cinema.location }}</b>
   <ul>
-    <li *ngFor="let movie of cinema.movies">
-      🎬 {{ movie.title }}（{{ movie.time }} 開始）
-    </li>
+    <li *ngFor="let movie of cinema.movies">🎬 {{ movie.title }}（{{ movie.time }} 開始）</li>
   </ul>
 </div>
 <h1>7. Class / Style 綁定</h1>
 <p [class.active]="isActive">This is active</p>
-<p [ngStyle]="{color: isActive ? 'green' : 'gray'}">Color change</p>
+<p [ngStyle]="{ color: isActive ? 'green' : 'gray' }">Color change</p>
 <h1>8. getter</h1>
-double count:{{doubleCount}}
+double count:{{ doubleCount }}
 <h1>9. 使用 BehaviorSubject(模擬vue3 watch)</h1>
 
 <!-- async 管道會自動訂閱並顯示最新值 -->
