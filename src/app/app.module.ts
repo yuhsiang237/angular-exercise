@@ -8,9 +8,21 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { BasicComponent } from './pages/basic/basic.component';
 import { LifecycleComponent } from './pages/lifecycle/lifecycle.component';
+import { ParentComponent } from './pages/parent/parent.component';
+import { Child1Component } from './pages/parent/child1/child1.component';
+import { Child2Component } from './pages/parent/child2/child2.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, AboutComponent, BasicComponent, LifecycleComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    AboutComponent,
+    BasicComponent,
+    LifecycleComponent,
+    ParentComponent,
+    Child1Component,
+    Child2Component
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
