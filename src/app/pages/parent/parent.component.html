@@ -1,0 +1,10 @@
+<h2>Parent Component</h2>
+查看網址可看到子路由、傳遞參數
+<nav>
+  <!--當該連結對應的路由「被啟用（active）時」，Angular 會自動把你寫的 class 名稱（這裡是 "active"）加到該 <a> 標籤上。
+當路由離開時，這個 class 會自動被移除。-->
+  <a routerLink="child1" [queryParams]="{ a: 100 }" routerLinkActive="active">Child 1</a> |
+  <a routerLink="child2" routerLinkActive="active">Child 2</a>
+</nav>
+
+<router-outlet></router-outlet>

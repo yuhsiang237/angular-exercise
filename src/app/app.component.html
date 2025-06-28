@@ -1,7 +1,8 @@
 <nav>
   <a routerLink="/">Home</a> | <a routerLink="/about">About</a> |
   <a routerLink="/basic">Angular響應式核心基礎操作</a>|
-  <a routerLink="/lifecycle">Angular常用生命週期</a>
+  <a routerLink="/lifecycle">Angular常用生命週期</a> |
+  <a [routerLink]="['/parent/child1']" [queryParams]="{ a: 100 }">Angular父子路由</a>
 </nav>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
