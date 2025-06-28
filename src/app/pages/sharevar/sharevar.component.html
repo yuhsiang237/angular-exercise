@@ -1,0 +1,10 @@
+<h1>變數共享</h1>
+<p>使用Service + RxJS</p>
+<label for="keyInput">輸入新 Key：</label>
+<input id="keyInput" [(ngModel)]="key" placeholder="請輸入新key" />
+
+<button (click)="save()">設定</button>
+
+<p>
+  目前在網站中流通的Key：<strong>{{ currentKey }}</strong>
+</p>

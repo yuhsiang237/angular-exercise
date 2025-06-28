@@ -11,6 +11,7 @@ import { LifecycleComponent } from './pages/lifecycle/lifecycle.component';
 import { ParentComponent } from './pages/parent/parent.component';
 import { Child1Component } from './pages/parent/child1/child1.component';
 import { Child2Component } from './pages/parent/child2/child2.component';
+import { SharevarComponent } from './pages/sharevar/sharevar.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { Child2Component } from './pages/parent/child2/child2.component';
     LifecycleComponent,
     ParentComponent,
     Child1Component,
-    Child2Component
+    Child2Component,
+    SharevarComponent
   ],
   imports: [
     BrowserModule,
