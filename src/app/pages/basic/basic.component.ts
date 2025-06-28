@@ -15,7 +15,7 @@ export class BasicComponent implements OnInit {
   // | 直接寫變數名宣告 | ✅（Component 屬性宣告）        |
   // 常數 (不可改變)
   // readonly MAX_SEATS = 100;
-  title = 'Hello Angular!'; 
+  title = 'Hello Angular!';
   // 2. Property Binding[]
   isDisabled = true;
   // 3. Event Binding ( )
@@ -66,7 +66,7 @@ export class BasicComponent implements OnInit {
     // 發送新的數值，觸發訂閱者
     this.number.next(current + 1);
   }
-  constructor() { 
+  constructor() {
     // 訂閱 number 的變化（watch）
     /**
      * 為什麼要放在 constructor 或 ngOnInit
@@ -75,13 +75,11 @@ export class BasicComponent implements OnInit {
       constructor 主要做「元件建構時要做的事」
       ngOnInit 是 Angular 生命週期中「元件初始化完成後」呼叫，比較推薦放監聽（subscription）在這
      */
-    this.number.subscribe(value => {
+    this.number.subscribe((value) => {
       console.log('number 改變了:', value);
       // 這裡可以執行任何副作用，例如觸發其他邏輯或呼叫 API
     });
   }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
