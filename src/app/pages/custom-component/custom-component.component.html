@@ -1,1 +1,16 @@
-<p>custom-component works!</p>
+<h2>自訂小數輸入元件</h2>
+可設定浮點數元件:<br />
+<pre>
+  1. 輸入欲限制的小數位位數，並點下確定
+  2. 在輸入框填入數值，若超過設定的小數位數會被刪除掉
+  3. 最下方則會出現最後的數值結果
+</pre>
+<label>設定輸入框小數位數：</label>
+<input type="number" [(ngModel)]="decimalPlacesInput" min="0" />
+<button (click)="applyDecimalPlaces()">設定</button>
+<br /><br />
+
+輸入:
+<app-decimal-input [(ngModel)]="myDecimalValue" [decimalPlaces]="decimalPlaces"></app-decimal-input>
+
+<p>你輸入的值是：{{ myDecimalValue }}</p>

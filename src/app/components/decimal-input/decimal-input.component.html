@@ -1,0 +1,14 @@
+<input
+  type="text"
+  [value]="displayValue"
+  (input)="onInput($event)"
+  (blur)="markAsTouched()"
+  class="decimal-input"
+/>
+<!--
+type="text"	指定這是一個文字輸入框，允許輸入任何文字（包括數字、小數點等）
+[value]="displayValue"	這是 Angular 的「單向資料綁定」，將變數 displayValue 的值顯示在輸入框中
+(input)="onInput($event)"	使用者每次輸入時觸發 onInput() 函數，把 $event（事件物件）當作參數傳進去
+(blur)="markAsTouched()"	當輸入框失焦（focus 被移開）時，觸發 markAsTouched() 函式，通常用來做觸碰回報或格式化
+class="decimal-input"	指定這個輸入框的 CSS class 名叫 decimal-input，可用於樣式設定
+-->

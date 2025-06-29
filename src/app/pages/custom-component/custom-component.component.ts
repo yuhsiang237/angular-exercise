@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CustomComponentComponent implements OnInit {
   constructor() {}
-
+  decimalPlacesInput: number = 2; // 使用者輸入的暫存值
+  decimalPlaces: number = 2;
+  myDecimalValue: number = 100.333;
+  applyDecimalPlaces() {
+    this.decimalPlaces = this.decimalPlacesInput;
+  }
   ngOnInit(): void {}
 }
