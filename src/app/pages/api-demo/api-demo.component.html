@@ -1,0 +1,10 @@
+<h1>API呼叫</h1>
+<p>請開啟F12可查看API的呼叫順序</p>
+<h3>並發非同步呼叫API</h3>
+<p>並發呼叫3隻API</p>
+<button (click)="callAPIByForkJoin()">呼叫</button><br />
+API呼叫結果:{{ callAPIByForkJoinResult ? callAPIByForkJoinResult : '-' }}<br />
+<h3>照順序同步呼叫API</h3>
+<p>依序呼叫3隻API</p>
+<button (click)="callAPIByConcact()">呼叫</button><br />
+API呼叫結果:{{ callAPIByConcatResult ? callAPIByConcatResult : '-' }}
