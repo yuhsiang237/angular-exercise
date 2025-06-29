@@ -1,6 +1,7 @@
 # AngularExercise
 ![workflow](https://github.com/yuhsiang237/angular-exercise/actions/workflows/node.js.yml/badge.svg)  
-這一份Angular常用的快速導覽，該版本使用約在2023年左右的Angular v14寫法。
+這一份Angular常用的快速導覽，該版本使用約在2023年左右的Angular v14寫法。<br/>
+對應Topic:<a href="https://github.com/yuhsiang237/angular-exercise/issues?q=is%3Aissue%20state%3Aclosed">前往</a>
 ```
 涵蓋:
 Angular響應式核心基礎操作 
