@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -38,7 +39,11 @@ import { ApiDemoComponent } from './pages/api-demo/api-demo.component';
      * 如果想在 Angular 中使用 雙向資料綁定 [(ngModel)]，就一定要先引入 FormsModule。
       ngModel 是屬於 Template-driven Form 的功能，Angular 不會自動幫你加入這個模組，你要手動在 AppModule 中引入。
      */
-    FormsModule
+    FormsModule,
+    /**
+     * 使用httpclient
+     */
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
