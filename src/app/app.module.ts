@@ -14,6 +14,7 @@ import { Child2Component } from './pages/parent/child2/child2.component';
 import { SharevarComponent } from './pages/sharevar/sharevar.component';
 import { CustomComponentComponent } from './pages/custom-component/custom-component.component';
 import { DecimalInputComponent } from './components/decimal-input/decimal-input.component';
+import { ApiDemoComponent } from './pages/api-demo/api-demo.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { DecimalInputComponent } from './components/decimal-input/decimal-input.
     Child2Component,
     SharevarComponent,
     CustomComponentComponent,
-    DecimalInputComponent
+    DecimalInputComponent,
+    ApiDemoComponent
   ],
   imports: [
     BrowserModule,

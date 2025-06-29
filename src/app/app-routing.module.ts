@@ -10,9 +10,11 @@ import { Child2Component } from './pages/parent/child2/child2.component';
 import { BasicComponent } from './pages/basic/basic.component';
 import { SharevarComponent } from './pages/sharevar/sharevar.component';
 import { CustomComponentComponent } from './pages/custom-component/custom-component.component';
+import { ApiDemoComponent } from './pages/api-demo/api-demo.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'api-demo', component: ApiDemoComponent },
   { path: 'about', component: AboutComponent },
   { path: 'basic', component: BasicComponent },
   { path: 'lifecycle', component: LifecycleComponent },
@@ -27,6 +29,7 @@ const routes: Routes = [
       { path: '', redirectTo: 'child1', pathMatch: 'full' } // 預設子路由
     ]
   },
+  { path: '', redirectTo: 'angular-exercise', pathMatch: 'full' },
   // 萬用路由（未知路徑轉向 Home）
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
