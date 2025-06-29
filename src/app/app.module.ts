@@ -12,6 +12,7 @@ import { ParentComponent } from './pages/parent/parent.component';
 import { Child1Component } from './pages/parent/child1/child1.component';
 import { Child2Component } from './pages/parent/child2/child2.component';
 import { SharevarComponent } from './pages/sharevar/sharevar.component';
+import { CustomComponentComponent } from './pages/custom-component/custom-component.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SharevarComponent } from './pages/sharevar/sharevar.component';
     ParentComponent,
     Child1Component,
     Child2Component,
-    SharevarComponent
+    SharevarComponent,
+    CustomComponentComponent
   ],
   imports: [
     BrowserModule,
