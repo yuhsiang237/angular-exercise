@@ -1,6 +1,15 @@
 # AngularExercise
-![workflow](https://github.com/yuhsiang237/angular-exercise/actions/workflows/node.js.yml/badge.svg)
-
+![workflow](https://github.com/yuhsiang237/angular-exercise/actions/workflows/node.js.yml/badge.svg)  
+這一份Angular常用的快速導覽，該版本使用約在2023年左右的Angular v14寫法。
+```
+涵蓋:
+Angular響應式核心基礎操作 
+Angular常用生命週期 
+Angular父子路由 
+Angular共享變數 
+Angular客製化元件
+API同步非同步操作
+```
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
 
 ## Development server
