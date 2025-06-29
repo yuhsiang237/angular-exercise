@@ -13,7 +13,7 @@ import { CustomComponentComponent } from './pages/custom-component/custom-compon
 import { ApiDemoComponent } from './pages/api-demo/api-demo.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: BasicComponent },
   { path: 'api-demo', component: ApiDemoComponent },
   { path: 'about', component: AboutComponent },
   { path: 'basic', component: BasicComponent },
@@ -30,8 +30,8 @@ const routes: Routes = [
     ]
   },
   { path: '', redirectTo: 'angular-exercise', pathMatch: 'full' },
-  // 萬用路由（未知路徑轉向 Home）
-  { path: '**', redirectTo: '', pathMatch: 'full' }
+  // 萬用路由（未知路徑轉向）
+  { path: '**', redirectTo: 'basic', pathMatch: 'full' }
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
