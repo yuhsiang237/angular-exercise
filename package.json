@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
+    "ci-test": "ng test --watch=false --browsers=ChromeHeadless",
     "test": "ng test",
     "format": "prettier --write \"src/**/*.{ts,html,scss}\"",
     "deploy": "ng build --configuration production && npx angular-cli-ghpages --dir=dist/angular-exercise"

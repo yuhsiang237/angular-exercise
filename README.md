@@ -1,4 +1,5 @@
 # AngularExercise
+![workflow](https://github.com/yuhsiang237/angular-exercise/actions/workflows/node.js.yml/badge.svg)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
 
