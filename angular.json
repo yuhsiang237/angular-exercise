@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "baseHref": "/angular-exercise/",
+            "baseHref": "/",
             "outputPath": "dist/angular-exercise",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -35,6 +35,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/angular-exercise/",
               "budgets": [
                 {
                   "type": "initial",
@@ -56,6 +57,7 @@
               "outputHashing": "all"
             },
             "development": {
+              "baseHref": "/",
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
