@@ -13,9 +13,14 @@ import { CustomComponentComponent } from './pages/custom-component/custom-compon
 import { ApiDemoComponent } from './pages/api-demo/api-demo.component';
 import { ResolverDemoComponent } from './pages/resolver-demo/resolver-demo.component';
 import { MovieResolver } from './resolvers/movie.resolver';
+import { ThirdPartyPackageComponent } from './pages/third-party-package/third-party-package.component';
 
 const routes: Routes = [
   { path: '', component: BasicComponent },
+  {
+    path: 'third-party-package',
+    component: ThirdPartyPackageComponent
+  },
   {
     path: 'resolver-demo',
     component: ResolverDemoComponent,

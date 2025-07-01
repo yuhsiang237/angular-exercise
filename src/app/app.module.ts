@@ -17,6 +17,9 @@ import { CustomComponentComponent } from './pages/custom-component/custom-compon
 import { DecimalInputComponent } from './components/decimal-input/decimal-input.component';
 import { ApiDemoComponent } from './pages/api-demo/api-demo.component';
 import { ResolverDemoComponent } from './pages/resolver-demo/resolver-demo.component';
+import { ThirdPartyPackageComponent } from './pages/third-party-package/third-party-package.component';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // 必須
 
 @NgModule({
   declarations: [
@@ -32,7 +35,8 @@ import { ResolverDemoComponent } from './pages/resolver-demo/resolver-demo.compo
     CustomComponentComponent,
     DecimalInputComponent,
     ApiDemoComponent,
-    ResolverDemoComponent
+    ResolverDemoComponent,
+    ThirdPartyPackageComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +49,10 @@ import { ResolverDemoComponent } from './pages/resolver-demo/resolver-demo.compo
     /**
      * 使用httpclient
      */
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,   // 動畫模組要先匯入
+    // 註冊 ToastrModule
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
