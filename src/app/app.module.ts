@@ -16,6 +16,7 @@ import { SharevarComponent } from './pages/sharevar/sharevar.component';
 import { CustomComponentComponent } from './pages/custom-component/custom-component.component';
 import { DecimalInputComponent } from './components/decimal-input/decimal-input.component';
 import { ApiDemoComponent } from './pages/api-demo/api-demo.component';
+import { ResolverDemoComponent } from './pages/resolver-demo/resolver-demo.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ApiDemoComponent } from './pages/api-demo/api-demo.component';
     SharevarComponent,
     CustomComponentComponent,
     DecimalInputComponent,
-    ApiDemoComponent
+    ApiDemoComponent,
+    ResolverDemoComponent
   ],
   imports: [
     BrowserModule,
