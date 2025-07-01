@@ -11,9 +11,18 @@ import { BasicComponent } from './pages/basic/basic.component';
 import { SharevarComponent } from './pages/sharevar/sharevar.component';
 import { CustomComponentComponent } from './pages/custom-component/custom-component.component';
 import { ApiDemoComponent } from './pages/api-demo/api-demo.component';
+import { ResolverDemoComponent } from './pages/resolver-demo/resolver-demo.component';
+import { MovieResolver } from './resolvers/movie.resolver';
 
 const routes: Routes = [
   { path: '', component: BasicComponent },
+  {
+    path: 'resolver-demo',
+    component: ResolverDemoComponent,
+    resolve: {
+      movies: MovieResolver
+    }
+  },
   { path: 'api-demo', component: ApiDemoComponent },
   { path: 'about', component: AboutComponent },
   { path: 'basic', component: BasicComponent },
