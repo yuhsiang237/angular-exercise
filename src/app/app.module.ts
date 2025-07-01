@@ -50,12 +50,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
      * 使用httpclient
      */
     HttpClientModule,
-    BrowserAnimationsModule, // 動畫模組要先匯入
-
+    BrowserAnimationsModule,   // 動畫模組要先匯入
+    // 註冊 ToastrModule
     ToastrModule.forRoot()
   ],
   providers: [],
-  // 註冊 ToastrModule
   bootstrap: [AppComponent]
 })
 export class AppModule {}
